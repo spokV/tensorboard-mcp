@@ -1,6 +1,6 @@
 """TensorBoard MCP Server - Model Context Protocol server for TensorBoard analysis."""
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "SAIL Team"
 __email__ = "sail@stanford.edu"
 

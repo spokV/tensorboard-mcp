@@ -11,7 +11,7 @@ with open(readme_path, "r", encoding="utf-8") as f:
 
 setup(
     name="tensorboard-mcp-server",
-    version="1.0.0",
+    version="1.0.1",
     description="TensorBoard Model Context Protocol (MCP) server for analyzing training runs",
     long_description=long_description,
     long_description_content_type="text/markdown",
