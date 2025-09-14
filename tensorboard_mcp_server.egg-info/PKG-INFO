@@ -1,3 +1,40 @@
+Metadata-Version: 2.4
+Name: tensorboard-mcp-server
+Version: 1.0.0
+Summary: TensorBoard Model Context Protocol (MCP) server for analyzing training runs
+Home-page: https://github.com/your-org/tensorboard-mcp
+Author: SAIL Team
+Author-email: SAIL Team <sail@stanford.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/your-org/tensorboard-mcp
+Project-URL: Repository, https://github.com/your-org/tensorboard-mcp.git
+Project-URL: Issues, https://github.com/your-org/tensorboard-mcp/issues
+Project-URL: Documentation, https://github.com/your-org/tensorboard-mcp#readme
+Keywords: tensorboard,mcp,model-context-protocol,machine-learning,ai
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: mcp>=0.1.0
+Requires-Dist: tensorboard>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
 TensorBoard MCP Server
 ======================
 

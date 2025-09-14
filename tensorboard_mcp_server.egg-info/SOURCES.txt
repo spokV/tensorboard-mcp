@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+tb_mcp_server/__init__.py
+tb_mcp_server/__main__.py
+tb_mcp_server/server.py
+tensorboard_mcp_server.egg-info/PKG-INFO
+tensorboard_mcp_server.egg-info/SOURCES.txt
+tensorboard_mcp_server.egg-info/dependency_links.txt
+tensorboard_mcp_server.egg-info/entry_points.txt
+tensorboard_mcp_server.egg-info/requires.txt
+tensorboard_mcp_server.egg-info/top_level.txt

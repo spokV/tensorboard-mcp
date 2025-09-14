@@ -153,5 +153,10 @@ async def summarize_run(log_dir: str) -> Dict[str, Any]:
         return {"error": str(e), "log_dir": log_dir}
 
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the TensorBoard MCP server."""
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()

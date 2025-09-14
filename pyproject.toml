@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tensorboard-mcp-server"
+version = "1.0.0"
+description = "TensorBoard Model Context Protocol (MCP) server for analyzing training runs"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "SAIL Team", email = "sail@stanford.edu"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["tensorboard", "mcp", "model-context-protocol", "machine-learning", "ai"]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=0.1.0",
+    "tensorboard>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+tensorboard-mcp-server = "tb_mcp_server:main"
+tensorboard-mcp = "tb_mcp_server:main"
+
+[project.urls]
+Homepage = "https://github.com/your-org/tensorboard-mcp"
+Repository = "https://github.com/your-org/tensorboard-mcp.git"
+Issues = "https://github.com/your-org/tensorboard-mcp/issues"
+Documentation = "https://github.com/your-org/tensorboard-mcp#readme"
+
+[tool.setuptools]
+packages = ["tb_mcp_server"]
+
+[tool.setuptools.package-data]
+tb_mcp_server = ["*.py"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
