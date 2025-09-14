@@ -1,0 +1,11 @@
+# python
+
+*.pyc
+*.pyo
+__pycache__
+
+# Python
+__pycache__
+*.pyc
+*.egg-info
+dist
