@@ -1,3 +1,0 @@
-[console_scripts]
-tensorboard-mcp = tb_mcp_server:main
-tensorboard-mcp-server = tb_mcp_server:main
